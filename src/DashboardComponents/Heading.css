@@ -1,0 +1,30 @@
+.heading{
+    margin-top: 40px;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.head-label{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #3158E2FF;
+    margin-bottom: 10px;
+}
+
+.head-main{
+    font-size: 52px;
+    line-height: 74px;
+    font-weight: 700;
+    color: #323842FF;
+    margin-bottom: 30px;
+}
+
+.heading-img{
+    width: 960px;
+    height: 537px;
+}

@@ -1,0 +1,177 @@
+.feeback-component{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.feedback-ele{
+    position: relative;
+    width: 100%;
+    height: 384px;
+    background: #8DA2EFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.feedback-ele p{
+    color: #ffffff;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.feedback-ele h1{
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.left-side{
+    position: absolute;
+    height: 178px;
+    top: 0;
+    right: 0;
+}
+
+.right-side{
+    position: absolute;
+    width: 247px;
+    height: 309px;
+    bottom: 0;
+    left: 0;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+    width: 100%;
+
+    margin-top: -160px;
+    z-index: 10;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-card {
+    flex: 0 0 480px; 
+    height: 320px;
+    scroll-snap-align: center;
+
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.quote-watermark {
+    position: absolute;
+    top: 0;
+    height: 80px;
+    right: 2%;
+    width: 100px;
+}
+
+.card-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.star-rating {
+    margin-top: 40px;
+    display: flex;
+    gap: 4px;
+}
+
+.star {
+    width: 36px;
+    height: 36px;
+}
+
+.star.filled {
+    color: #facc15; 
+}
+
+.star.empty {
+    color: #e5e7eb; 
+}
+
+
+.card-quote-text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #374151;
+    margin: 0 0 24px 0;
+}
+
+.card-author-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.author-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.author-title {
+    font-size: 18px;
+    color: #6b7280;
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 32px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e5e7eb;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #8da2ef;
+}
+
