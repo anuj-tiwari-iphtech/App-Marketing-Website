@@ -35,6 +35,9 @@ const feedbacks = [
 export default function Feedbacks() {
   return (
     <>
+      <div className='feedback-container'>
+
+      
         <div className="feeback-component">
             <div className="feedback-ele">
                 <p>
@@ -81,6 +84,7 @@ export default function Feedbacks() {
                 <span className="dot"></span>
                 <span className="dot"></span>
             </div>
+        </div>
         </div>
     </>
   )

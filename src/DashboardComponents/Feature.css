@@ -69,3 +69,50 @@
     border-style: solid;
 }
 
+/* ==========================================
+   Responsive Styles for Features Section
+   ========================================== */
+
+/* Tablet View (2 columns or wrapped stack) */
+@media (max-width: 1100px) {
+    .feature-lists {
+      flex-wrap: wrap; /* Allows cards to wrap into 2 lines */
+      gap: 30px;
+    }
+    
+    .feature-lists-ele {
+      width: 300px; /* Slightly shrink card width for tighter screens */
+    }
+  }
+  
+  /* Mobile View (1 column stack) */
+  @media (max-width: 768px) {
+    .features {
+      min-height: auto;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+  
+    .feature-lists {
+      flex-direction: column; /* Stacks feature cards vertically */
+      align-items: center;
+      gap: 40px;
+      margin: 20px 0;
+    }
+  
+    .feature-lists-ele {
+      width: 100%;
+      max-width: 350px; /* Keeps your original desktop width cap */
+    }
+  
+    .ele-label {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  
+    .feature-button {
+      width: 100%;
+      max-width: 300px;
+      padding: 12px 24px; /* Scaled down padding for smaller mobile screens */
+    }
+  }

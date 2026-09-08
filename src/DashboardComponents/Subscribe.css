@@ -89,3 +89,84 @@
     object-fit: cover;
   }
 
+/* ==========================================
+   Responsive Styles for Subscribe Banner
+   ========================================== */
+
+/* Tablets & Small Laptops */
+@media (max-width: 992px) {
+  .subscribe-page {
+    padding: 40px 20px;
+  }
+
+  .subs-banner {
+    max-width: 100%;
+    min-height: auto;
+    padding-bottom: 40px;
+  }
+
+  /* Adjust absolute illustrations to fit narrower banner space */
+  .outer-img {
+    right: 20px;
+    height: 240px;
+  }
+
+  .inner-img {
+    right: 42px;
+    width: 170px;
+    height: 205px;
+  }
+}
+
+/* Mobile Devices (Stack text/input above images or adjust layout) */
+@media (max-width: 768px) {
+  .subscribe-page {
+    min-height: auto;
+    padding: 24px 16px;
+  }
+
+  .subs-banner {
+    padding: 32px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sub-heading {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .subs-subheading {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* Form Element Adjustments */
+  .subs-input-ele {
+    margin: 24px 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sub-input {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .sub-button {
+    margin-left: 0;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Hide overlay artwork on smaller screens to keep form clean and accessible */
+  .outer-img,
+  .inner-img {
+    display: none;
+  }
+}

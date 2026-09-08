@@ -1,11 +1,12 @@
 .heading{
     margin-top: 40px;
     width: 100%;
-    height: 800px;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding: 0 20px;
 }
 
 .head-label{
@@ -25,6 +26,33 @@
 }
 
 .heading-img{
-    width: 960px;
-    height: 537px;
+    width: 100%;
+    max-width: 960px;
+    object-fit: cover;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .heading {
+        min-height: auto;
+        margin-top: 24px;
+    }
+
+    .head-main {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .head-main {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .head-label {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }

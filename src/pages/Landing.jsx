@@ -7,11 +7,13 @@ import HeroSection from "../DashboardComponents/Header"
 import Heading from "../DashboardComponents/Heading"
 import OurClients from "../DashboardComponents/OurClients"
 import Subscribe from "../DashboardComponents/Subscribe"
+import './landing.css'
 
 export default function Landing() {
   return (
     <>
         <Navbar/>
+      <div className="landing-page">
         <HeroSection/>
         <Heading/>
         <Feature/>
@@ -19,6 +21,7 @@ export default function Landing() {
         <Feedbacks/> 
         <FAQSection/>
         <Subscribe/>
+        </div>
         <Footer/>
     </>
   )

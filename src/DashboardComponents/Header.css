@@ -286,3 +286,92 @@
     z-index: 2;
 }
 
+@media (max-width: 900px) {
+    .hero-section {
+      min-height: auto;
+      padding: 40px 16px;
+    }
+  
+    .hero-container {
+      flex-direction: column; 
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .hero-text-content {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .hero-heading {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  
+    .hero-body-text {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 12px 0 24px;
+    }
+  
+    .hero-btn-group {
+      justify-content: center;
+    }
+  
+    .hero-image-content {
+      width: 100%;
+      max-width: 420px;
+      height: 380px;
+    }
+  
+    .card-yellow {
+      width: 100px;
+      height: 125px;
+      left: 10px;
+    }
+  
+    .card-green {
+      width: 200px;
+      height: 110px;
+      right: 10px;
+    }
+  
+    .data-value {
+      font-size: 28px;
+    }
+  
+    .card-progress {
+      width: 210px;
+      height: 230px;
+      left: 10px;
+      bottom: 0;
+      padding: 14px;
+    }
+  
+    .progress-arc {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .progress-arc::before {
+      top: 20px;
+      left: 20px;
+      width: 110px;
+      height: 110px;
+    }
+  
+    .progress-center-text {
+      top: 40px;
+    }
+  
+    .card-pink {
+      width: 120px;
+      height: 150px;
+      right: 20px;
+      bottom: 40px;
+    }
+  
+    .bg-ring {
+      display: none;
+    }
+  }
