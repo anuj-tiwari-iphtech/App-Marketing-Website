@@ -1,0 +1,113 @@
+.blog-page{
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.blog-page-container{
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.blog-page-header-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.blog-page-header-container h1{
+    font-size: 52px;
+}
+
+.blog-page-button{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.blog-page-button button{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #6A86EAFF;
+    border: 1px solid #6A86EAFF;
+    background: #ffffff;
+    width: 140px;
+    height: 36px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.blog-page-button button.active{
+    color: #ffffff;
+    background: #6A86EAFF;
+    border: 1px solid #6A86EAFF;
+}
+
+.blog-page-img-container{
+    width: 100%;
+    max-height: 288px;
+    display: flex;
+    margin-bottom: 30px;
+    border: 1px solid #DEE1E6FF;
+    border-radius: 20px;
+}
+
+.blog-page-text{
+    width: 50%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-page-text h1{
+    font-size: 32px;
+    margin: 10px;
+    color: #323842FF;
+    font-weight: 700;
+}
+
+.blog-page-text p{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.blog-page-end{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+.blog-page-end span{
+    font-size: 10px;
+    font-weight: 400;
+    color: #9095A0FF;
+}
+
+.span1{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 1;
+    background: rgb(252, 239, 124);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.blog-page-img{
+    object-fit: fit;
+    width: 50%;
+    height: 288px;
+    border-radius: 0 20px 20px 0;
+}
