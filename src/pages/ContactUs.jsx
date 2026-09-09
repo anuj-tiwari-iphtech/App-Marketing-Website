@@ -1,5 +1,15 @@
+import ContactForm from "../ContactPage/ContactForm"
+import ContactHero from "../ContactPage/ContactHero"
+import Footer from "../components/footer"
+import Navbar from "../components/navbar"
+
 export default function ContactUs() {
   return (
-    <div>ContactUs</div>
+    <>
+      <Navbar/>
+      <ContactHero/>
+      <ContactForm/>
+      <Footer/>
+    </>
   )
 }

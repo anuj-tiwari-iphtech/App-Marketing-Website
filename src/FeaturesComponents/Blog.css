@@ -117,14 +117,22 @@
     color: #6b7280;
   }
   
-  /* Responsiveness */
+
   @media (max-width: 900px) {
+    .blog-container{
+      margin: 20px;
+    }
+
     .blog-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (max-width: 600px) {
+    .blog-container{
+      margin: 20px;
+    }
+
     .blog-grid {
       grid-template-columns: 1fr;
     }

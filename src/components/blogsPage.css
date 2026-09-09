@@ -111,3 +111,92 @@
     height: 288px;
     border-radius: 0 20px 20px 0;
 }
+
+/* ==========================================
+   Responsive Styles for Blog Page
+   ========================================== */
+
+/* Tablet View */
+@media (max-width: 992px) {
+    .blog-page-header-container h1 {
+      font-size: 38px;
+    }
+  
+    /* Wrap category filter buttons if they exceed screen width */
+    .blog-page-button {
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .blog-page-img-container {
+      max-height: none; /* Allows feature post box to auto-expand */
+    }
+  
+    .blog-page-text h1 {
+      font-size: 24px;
+    }
+  
+    .blog-page-text p {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 600px) {
+    .blog-page {
+      padding: 24px 16px;
+      margin-bottom: 24px;
+      gap: 24px;
+    }
+  
+    .blog-page-header-container {
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+  
+    .blog-page-header-container h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .blog-page-button {
+      gap: 10px;
+    }
+  
+    .blog-page-button button {
+      width: 110px;
+      height: 32px;
+      font-size: 12px;
+    }
+  
+    /* Stack card vertically: image on top, text on bottom */
+    .blog-page-img-container {
+      flex-direction: column-reverse; /* Put image above text content */
+      max-height: none;
+    }
+  
+    .blog-page-text {
+      width: 100%;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+  
+    .blog-page-text h1 {
+      font-size: 20px;
+      margin: 6px 0;
+    }
+  
+    .blog-page-text p {
+      padding: 0;
+      margin-bottom: 12px;
+    }
+  
+    .blog-page-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; /* Fixes 'fit' typo from base CSS for clean image cropping */
+      border-radius: 20px 20px 0 0;
+    }
+  }
