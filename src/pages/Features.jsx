@@ -7,14 +7,16 @@ import HowItWorks from "../FeaturesComponents/HowItWorks";
 import Blog from "../FeaturesComponents/Blog";
 export default function Features() {
   return (
-    <>
-    <Navbar/>
-    <Hero/>
-    <FeatureCards/>
-    <HowItWorks/>
-    <Blog/>
-    <Subscribe/>
-    <Footer/>
-    </>
+    <div className="page-wrapper">
+      <Navbar/>
+      <div className="page-content">
+        <Hero/>
+        <FeatureCards/>
+        <HowItWorks/>
+        <Blog/>
+        <Subscribe/>
+      </div>
+      <Footer/>
+    </div>
   )
 }

@@ -59,6 +59,7 @@ const pricingPlans = [
 
 export default function Plan() {
   const [billingCycle, setBillingCycle] = useState('monthly');
+  const [selectedPlanId, setSelectedPlanId] = useState(null);
 
   return (
     <section className="plan-section">
@@ -69,13 +70,13 @@ export default function Plan() {
           <h2 className="plan-main-title">Choose your plan</h2>
           <div className="plan-toggle-container">
             <button
-              className={`plan-toggle-btn ${billingCycle === 'monthly' ? 'plan-toggle-active' : ''}`}
+              className={`plan-toggle-btn plan-toggle-monthly ${billingCycle === 'monthly' ? 'plan-toggle-active' : ''}`}
               onClick={() => setBillingCycle('monthly')}
             >
               Monthly
             </button>
             <button
-              className={`plan-toggle-btn ${billingCycle === 'annually' ? 'plan-toggle-active' : ''}`}
+              className={`plan-toggle-btn plan-toggle-annually ${billingCycle === 'annually' ? 'plan-toggle-active' : ''}`}
               onClick={() => setBillingCycle('annually')}
             >
               Annually
@@ -83,7 +84,6 @@ export default function Plan() {
           </div>
         </div>
 
-        {/* Pricing Cards */}
         <div className="plan-grid">
           {pricingPlans.map((plan) => {
             const price =
@@ -93,7 +93,6 @@ export default function Plan() {
 
             return (
               <div key={plan.id} className="plan-card">
-                {/* Colored Top Header */}
                 <div className={`plan-card-header plan-header-${plan.headerTheme}`}>
                   <div className="plan-card-header-top">
                     <h3 className="plan-title">{plan.name}</h3>
@@ -104,7 +103,6 @@ export default function Plan() {
                   <p className="plan-tagline">{plan.tagline}</p>
                 </div>
 
-                {/* Card Body */}
                 <div className="plan-card-body">
                   <div className="plan-price-container">
                     <span className="plan-price-value">{price}</span>
@@ -113,7 +111,8 @@ export default function Plan() {
                     )}
                   </div>
 
-                  <button className={`plan-btn plan-btn-${plan.buttonVariant}`}>
+                  <button className={`plan-btn plan-btn-${plan.buttonVariant}`}
+                  >
                     {plan.buttonText}
                   </button>
 

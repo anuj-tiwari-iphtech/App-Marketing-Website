@@ -1,7 +1,6 @@
-import img from '../assets/Feature/vedioing.png'
+import img from '../assets/CarrerPage/visily-image-101.jpg'
 import { CiPlay1 } from "react-icons/ci";
-import '../DashboardComponents/Heading.css'
-export default function HowItWorks() {
+export default function VedioSection() {
   return (
     <>
         <div className="heading">

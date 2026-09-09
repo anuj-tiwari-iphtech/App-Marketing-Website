@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { IoChevronDownOutline } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.jpg'; // Path to your logo image
 import './footer.css';
 
@@ -23,10 +24,10 @@ export default function Footer() {
         <div className="footer-col">
           <h4 className="footer-heading">Product</h4>
           <ul className="footer-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#case-studies">Case Studies</a></li>
+            <li><Link to='/features'>Features</Link></li>
+            <li><Link to='/pricing'>Pricing</Link></li>
+            <li><Link to='/Blog'>Blog</Link></li>
+            <li><Link to='/'>Case Studies</Link></li>
           </ul>
         </div>
 
@@ -66,7 +67,7 @@ export default function Footer() {
         <div className="copyright-legal">
           <span>© 2022 Brand, Inc.</span>
           <span className="dot-footer">•</span>
-          <a href="#privacy">Privacy</a>
+          <Link to='/privacy'>Privacy</Link>
           <span className="dot-footer">•</span>
           <a href="#terms">Terms</a>
           <span className="dot-footer">•</span>

@@ -16,8 +16,9 @@
     width: 100%;
     background: #ffffff;
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     z-index: 2;
 }
 
@@ -43,7 +44,7 @@
 }
   
 .hero-text-content {
-    flex: 1;
+    flex: 1 1 400px;
     max-width: 500px;
 }
   
@@ -318,10 +319,14 @@
       justify-content: center;
     }
   
-    .hero-image-content {
+    /* .hero-image-content {
       width: 100%;
       max-width: 420px;
       height: 380px;
+    } */
+
+    .hero-image-content{
+        display: none;
     }
   
     .card-yellow {
@@ -368,7 +373,7 @@
       width: 120px;
       height: 150px;
       right: 20px;
-      bottom: 40px;
+      bottom: 20px;
     }
   
     .bg-ring {

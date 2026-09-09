@@ -46,7 +46,15 @@
     background-color: #2b303a;
     color: #ffffff;
   }
+
+  .plan-toggle-monthly{
+    border-radius: 999px 0 0 999px;
+  }
   
+  .plan-toggle-annually{
+    border-radius: 0 999px 999px 0;
+  }
+
   .plan-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -200,7 +208,7 @@
     color: #48D4B6FF;
     flex-shrink: 0;
   }
-  
+
   @media (max-width: 900px) {
     .plan-grid {
       grid-template-columns: 1fr;

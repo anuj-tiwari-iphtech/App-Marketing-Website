@@ -5,12 +5,14 @@ import Footer from "../components/footer";
 import Plan from "../components/Plan";
 export default function Pricing() {
   return (
-    <>
+    <div className="page-wrapper">
       <Navbar/>
-      <Plan/>
-      <Feedbacks/>
-      <Subscribe/>
+      <div className="page-content">
+        <Plan/>
+        <Feedbacks/>
+        <Subscribe/>
+      </div>
       <Footer/>
-    </>
+    </div>
   )
 }

@@ -6,7 +6,6 @@ export default function FeatureCards() {
     <section className="feature-cards-section">
       <div className="feature-cards-container">
         
-        {/* Left Card - Light Blue */}
         <div className="feature-card card-blue">
           <h2 className="feature-card-heading">Feature benefits</h2>
           <p className="feature-card-description">
@@ -31,7 +30,6 @@ export default function FeatureCards() {
           </ul>
         </div>
 
-        {/* Right Card - Light Yellow */}
         <div className="feature-card card-yellow-1">
           <h2 className="feature-card-heading">Feature benefits</h2>
           <p className="feature-card-description">

@@ -1,3 +1,9 @@
-/* .landing-page{
-    max-width: 1990px;
-} */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex: 1 0 auto;
+}

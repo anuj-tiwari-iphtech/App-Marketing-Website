@@ -1,0 +1,134 @@
+.perks-section {
+    background-color: #6A86EAFF; 
+    padding: 80px 20px;
+    color: #ffffff;
+  }
+  
+  .perks-container {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  
+  .perks-main-title {
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 0 60px 0;
+  }
+  
+  .perks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0px;
+  }
+  
+  .perk-pos-1 {
+    grid-column: 1;
+    grid-row: 2; 
+  }
+  
+  .perk-pos-2 {
+    grid-column: 2;
+    grid-row: 1; 
+  }
+  
+  .perk-pos-3 {
+    grid-column: 2;
+    grid-row: 2; 
+  }
+  
+  .perk-pos-4 {
+    grid-column: 3;
+    grid-row: 1; 
+  }
+  
+  .perk-card {
+    padding: 50px 28px;
+    border-radius: 16px 0 16px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .perk-card-white {
+    background-color: #ffffff;
+    color: #6A86EAFF;
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); */
+  }
+  
+  .perk-card-white .perk-title {
+    color: #6A86EAFF;
+  }
+  
+  .perk-card-white .perk-desc {
+    color: #6A86EAFF;
+  }
+  
+  .perk-card-white .perk-icon-wrapper {
+    color: #6A86EAFF;
+  }
+  
+  .perk-card-transparent {
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+  .perk-card-transparent .perk-title {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .perk-card-transparent .perk-desc {
+    color: #ffffff;
+  }
+  
+  .perk-card-transparent .perk-icon-wrapper {
+    color: #ffffff;
+  }
+  
+  .perk-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .perk-icon-wrapper svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .perk-title {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 18px 0;
+  }
+  
+  .perk-desc {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 868px) {
+    .perks-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
+    }
+  
+    /* Reset grid placement for single column */
+    .perk-pos-1,
+    .perk-pos-2,
+    .perk-pos-3,
+    .perk-pos-4 {
+      grid-column: auto;
+      grid-row: auto;
+    }
+  
+    .perk-card-transparent {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  }

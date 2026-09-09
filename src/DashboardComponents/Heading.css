@@ -30,6 +30,19 @@
     max-width: 960px;
     object-fit: cover;
     height: auto;
+    border-radius: 20px;
+}
+
+.play-btn-img{
+    position: relative;
+}
+
+.play-button{
+    position: absolute;
+    font-size: 40px;
+    left: 49%;
+    top: 42%;
+    color: #ffffff;
 }
 
 @media (max-width: 992px) {

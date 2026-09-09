@@ -11,9 +11,9 @@ import './landing.css'
 
 export default function Landing() {
   return (
-    <>
-        <Navbar/>
-      <div className="landing-page">
+    <div className="page-wrapper">
+      <Navbar/>
+      <div className="page-content">
         <HeroSection/>
         <Heading/>
         <Feature/>
@@ -21,8 +21,8 @@ export default function Landing() {
         <Feedbacks/> 
         <FAQSection/>
         <Subscribe/>
-        </div>
-        <Footer/>
-    </>
+      </div>
+      <Footer/>
+    </div>
   )
 }
