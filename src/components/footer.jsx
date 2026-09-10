@@ -2,7 +2,7 @@ import React from 'react';
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { IoChevronDownOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.jpg'; // Path to your logo image
+import logo from '../assets/logo.jpg'; 
 import './footer.css';
 
 export default function Footer() {
@@ -35,10 +35,10 @@ export default function Footer() {
         <div className="footer-col">
           <h4 className="footer-heading">Company</h4>
           <ul className="footer-links">
-            <li><a href="#about">About us</a></li>
-            <li><a href="#contact">Contact us</a></li>
-            <li><a href="#faqs">FAQs</a></li>
-            <li><a href="#careers">Careers</a></li>
+            <li><Link to='/about-us'>About us</Link></li>
+            <li><Link to='/contact-us'>Contact us</Link></li>
+            <li><Link to='/faq'>FAQs</Link></li>
+            <li><Link to='/careers'>Careers</Link></li>
           </ul>
         </div>
 

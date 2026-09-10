@@ -1,0 +1,240 @@
+.faq-page-header{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-hero-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* min-height: 750px; */
+}
+
+.faq-yellow-circle{
+    position: absolute;
+    border-radius: 50%;
+    border: 20px solid #FCFAE9FF;
+    pointer-events: none;
+    width: 582px;
+    height: 573px;
+    top: -33%;
+    right: 10%;
+    z-index: 1;
+}
+
+.faq-blue-circle{
+    position: absolute;
+    border-radius: 50%;
+    border: 15px solid rgba(210, 217, 249, 1);
+    pointer-events: none;
+    width: 385px;
+    height: 379px;
+    top: 40%;
+}
+
+.faq-upper-part{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq-heading{
+    width: 50%;
+}
+
+.faq-heading h1{
+    padding: 20px;
+    font-size: 52px;
+    line-height: 74px;
+    font-weight: 700;
+    color: #323842FF;
+}
+
+.faq-heading p{
+    max-width: 400px;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #171A1FFF;
+}
+
+.faq-header-img{
+    padding: 10px;
+    border-radius: 20px;
+    width: 544px;
+    height: 309px;
+    z-index: 2;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+.faq-lower-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FAFAFBFF;
+    z-index: 10;
+    position: relative;
+    min-height: 393px;
+    padding: 40px 20px;
+}
+
+.faq-lower-heading{
+    z-index: 11;
+}
+
+.faq-lower-part h3{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #323842FF;
+}
+
+.faq-lower-part p{
+    max-width: 600px;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 400;
+    color: #323842FF;
+}
+
+.faq-lower-part img{
+    height: 150px;
+    width: 150px;
+    rotate: 180deg;
+    position: absolute;
+    top: 53%;
+    right: 34%;
+}
+
+@media (max-width: 1024px) {
+    .faq-hero-container{
+        min-height: 600px;
+    }
+
+    .faq-yellow-circle{
+        width: 400px;
+        height: 394px;
+        top: -20%;
+        right: 2%;
+    }
+
+    .faq-blue-circle{
+        width: 280px;
+        height: 276px;
+        top: 45%;
+    }
+
+    .faq-heading h1{
+        font-size: 40px;
+        line-height: 56px;
+        padding: 15px;
+    }
+
+    .faq-heading p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .faq-header-img{
+        width: 380px;
+        height: 220px;
+    }
+
+    .faq-lower-part p{
+        font-size: 30px;
+        line-height: 42px;
+        padding: 0 20px;
+    }
+
+    .faq-lower-part img{
+        height: 110px;
+        width: 110px;
+        right: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-hero-container{
+        min-height: auto;
+    }
+
+    .faq-upper-part{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .faq-heading{
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+
+    .faq-heading h1{
+        font-size: 32px;
+        line-height: 44px;
+        padding: 10px;
+    }
+
+    .faq-heading p{
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .faq-header-img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        order: 0;
+    }
+
+    .faq-yellow-circle{
+        width: 250px;
+        height: 246px;
+        top: -10%;
+        right: -5%;
+    }
+
+    .faq-blue-circle{
+        width: 180px;
+        height: 178px;
+        top: 55%;
+        left: -5%;
+    }
+
+    .faq-lower-part{
+        min-height: 300px;
+        padding: 30px 16px;
+    }
+
+    .faq-lower-part h3{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .faq-lower-part p{
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .faq-lower-part img{
+        height: 70px;
+        width: 70px;
+        top: 60%;
+        right: 8%;
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 400px) {
+    .faq-yellow-circle,
+    .faq-blue-circle{
+        display: none;
+    }
+}

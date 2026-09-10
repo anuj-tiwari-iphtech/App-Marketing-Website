@@ -1,5 +1,6 @@
 import outer from '../assets/Dashboard/sub-outer.png'
 import inner from '../assets/Dashboard/sub-inner.jpg'
+import { IoPaperPlaneOutline } from "react-icons/io5";
 import './Subscribe.css'
 export default function Subscribe() {
   return (
@@ -24,6 +25,8 @@ export default function Subscribe() {
             </div>
             <img src={outer} className='outer-img' alt='Outer Frame'/>
             <img src={inner} className='inner-img' alt='Inner Graphic'/>
+            <div className='plane-icon'><IoPaperPlaneOutline className='plane-icon1'/></div>
+            
         </div>
 
     </div>

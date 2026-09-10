@@ -65,7 +65,6 @@
   white-space: nowrap;
 }
 
-/* Mobile Toggle Icon (Hidden on Desktop) */
 .menu-toggle {
   display: none;
   background: none;
@@ -75,12 +74,14 @@
   cursor: pointer;
 }
 
-/* ==========================================
-    Responsive Breakpoint (850px)
-    ========================================== */
+
 @media (max-width: 920px) {
+  .navbar{
+    justify-content: space-between;
+  }
+
   .menu-toggle {
-    display: block; /* Show hamburger button */
+    display: block; 
   }
 
   .nav-right {
@@ -98,7 +99,6 @@
     display: none;
   }
 
-  /* Slide down when active */
   .nav-right.active {
     display: flex;
   }
