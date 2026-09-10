@@ -1,0 +1,120 @@
+.faq-page-hero-container {
+    width: 100%;
+    min-height: 400px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-hero-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 40px 40px 100px;
+    z-index: 2;
+}
+
+.faq-hero-main h1 {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    line-height: 68px;
+    font-weight: 700;
+    color: #323842FF;
+}
+
+/* New Wrapper to position the icon inside */
+.search-input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon positioned inside the left side of input */
+.search-input-wrapper .search-icon {
+    position: absolute;
+    left: 16px;
+    font-size: 24px;
+    color: #BCC1CAFF;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Updated input rule to fit inside wrapper */
+.search-input-wrapper input {
+    width: 100%;
+    padding: 10px 20px 10px 48px; /* Added 48px left padding for the icon */
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #BCC1CAFF;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search-input-wrapper input::placeholder {
+    color: #BCC1CAFF;
+}
+
+.mobile-container {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    bottom: -60%;
+}
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+
+    .faq-page-hero-container {
+        min-height: 332px;
+    }
+
+    .faq-hero-main {
+        padding: 30px 30px 30px 40px;
+    }
+
+    .faq-hero-main h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .mobile-container {
+        right: 0%;
+        transform: scale(0.8);
+        transform-origin: bottom right;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-page-hero-container {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .faq-hero-main {
+        padding: 0 24px;
+        width: 100%;
+    }
+
+    .faq-hero-main h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .search-input-wrapper {
+        max-width: 100%;
+    }
+
+    .mobile-container {
+        display: none;
+    } 
+}

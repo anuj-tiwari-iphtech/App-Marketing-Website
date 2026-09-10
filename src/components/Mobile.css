@@ -1,0 +1,141 @@
+.mb-wrapper {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    flex-shrink: 0;
+    /* border: 2px solid black; */
+}
+
+.mb-frame-outer {
+    position: absolute;
+    z-index: 23;
+    top: 0;
+    left: 15%;
+}
+
+.mb-frame-inner {
+    position: absolute;
+    z-index: 22;
+    top: 2%;
+    left:20%;
+}
+
+.mb-question-bubble {
+    position: absolute;
+    background: #6A86EAFF;
+    width: 214px;
+    height: 66px;
+    border-radius: 20px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 24;
+    padding: 12px;
+    top: 15%;
+    left: 2%;
+}
+
+.mb-question-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+.mb-question-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.mb-bubble-sent {
+    position: absolute;
+    width: 184px;
+    height: 96px;
+    z-index: 25;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 40%;
+}
+
+.mb-bubble-sent-text {
+    width: 184px;
+    height: 68px;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #171A1FFF;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mb-bubble-sent-time {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #565E6CFF;
+}
+
+.mb-bubble-received {
+    position: absolute;
+    width: 184px;
+    height: 112px;
+    background: #ffffff;
+    border-radius: 6px;
+    z-index: 26;
+    left: 26%;
+    top: 46%;
+}
+
+.mb-bubble-received-text {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #171A1FFF;
+    padding: 10px;
+    margin: 0;
+}
+
+.mb-avatar-bubble {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: #ffffff;
+    z-index: 27;
+    bottom: 26%;
+    left: 26%;
+}
+
+.mb-avatar-img {
+    padding: 10px 6px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
+.mb-timestamp {
+    position: absolute;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #565E6CFF;
+    bottom: 23%;
+    left: 26%;
+    z-index: 26;
+}
+
+.mb-chat-icon {
+    position: absolute;
+    z-index: 29;
+    top: 50%;
+    right: 12%;
+}

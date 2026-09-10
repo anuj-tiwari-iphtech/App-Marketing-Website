@@ -39,7 +39,6 @@ export default function FAQSection() {
   return (
     <section className="faq-container">
       <div className="faq-media-col">
-        {/* Replace src with your image when ready */}
 
         <img src={phoneOuter} className='faq-phone-outer' alt='Phone Case'/>
         <img src={phoneInner} className='faq-phone-inner' alt='Phone Case Inner'/>
@@ -65,7 +64,6 @@ export default function FAQSection() {
 
       </div>
 
-      {/* Right Column: FAQ Accordion */}
       <div className="faq-content-col">
         <span className="faq-subtitle">FAQs</span>
         <h2 className="faq-title">How can we help you ?</h2>

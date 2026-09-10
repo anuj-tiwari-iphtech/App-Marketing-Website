@@ -67,21 +67,8 @@
     object-fit: contain;
 }
 
-/* ==========================================
-   Responsive Styles for Contact Us / Clients
-   ========================================== */
 
-/* Large Laptops & Desktops */
-@media (max-width: 1200px) {
-    .brand-logos {
-      /* Flexible columns that shrink on smaller desktops */
-      grid-template-columns: repeat(4, 1fr); 
-      gap: 20px;
-    }
-  }
-  
-  /* Tablets (Stack layout vertically) */
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     .contact-us {
       padding: 40px 20px;
     }
@@ -96,7 +83,7 @@
     .our-clients {
       max-width: 100%;
       padding: 0;
-      align-items: center; /* Centers title, text, and button */
+      align-items: center;
     }
   
     .our-clients h1 {
@@ -115,7 +102,6 @@
     }
   }
   
-  /* Mobile Phones (2x4 logo grid stack) */
   @media (max-width: 576px) {
     .our-clients h1 {
       font-size: 28px;
@@ -123,7 +109,6 @@
     }
   
     .brand-logos {
-      /* Converts 4-column layout into a 2x4 grid on small screens */
       grid-template-columns: repeat(2, 1fr); 
       gap: 20px;
       justify-items: center;
