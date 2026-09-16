@@ -1,6 +1,6 @@
 import { CiSearch } from "react-icons/ci";
 import './FaqPageHero.css'
-import Mobile from '../components/mobile'
+import Mobile from "../components/mobile";
 
 
 export default function FaqPageHero() {

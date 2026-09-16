@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoChevronDownOutline, IoChevronForwardOutline } from 'react-icons/io5';
-import phoneOuter from '../assets/Dashboard/FAQ/PhoneInner.png'
-import phoneInner from '../assets/Dashboard/FAQ/phoneOuter.png'
-import img from '../assets/Dashboard/FAQ/smily.png'
-import chat from '../assets/Dashboard/FAQ/chat1.png'
 import './FAQSection.css';
 import Mobile from '../components/mobile';
 
