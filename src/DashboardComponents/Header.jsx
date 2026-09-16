@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 import phone2Img from '../assets/Dashboard/phone1.png';
 import phone1Img from '../assets/Dashboard/phone2.png';
 
 export default function HeroSection() {
+    const [activeBtn, setActiveBtn] = useState('primary');
   return (
     <section className="hero-section">
       <div className="bg-ring ring-1"></div>
@@ -23,10 +24,10 @@ export default function HeroSection() {
             reprehenderit pariatur.
           </p>
           <div className="hero-btn-group">
-            <button className="btn btn-primary" onClick={() => {}}>
+            <button className={`btn btn-primary ${activeBtn === 'primary' ? 'btn-active' : ''}`} onClick={() => setActiveBtn('primary')}>
               Get Started
             </button>
-            <button className="btn btn-secondary" onClick={() => {}}>
+            <button className={`btn btn-secondary ${activeBtn === 'secondary' ? 'btn-active' : ""}`} onClick={() => setActiveBtn('secondary')}>
               Learn more
             </button>
           </div>

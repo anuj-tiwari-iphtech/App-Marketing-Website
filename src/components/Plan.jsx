@@ -59,13 +59,12 @@ const pricingPlans = [
 
 export default function Plan() {
   const [billingCycle, setBillingCycle] = useState('monthly');
-  const [selectedPlanId, setSelectedPlanId] = useState(null);
+  const [selectedPlanId, setSelectedPlanId] = useState('pro');
 
   return (
     <section className="plan-section">
       <div className="plan-container">
         
-        {/* Header and Toggle Button */}
         <div className="plan-header">
           <h2 className="plan-main-title">Choose your plan</h2>
           <div className="plan-toggle-container">
@@ -90,10 +89,11 @@ export default function Plan() {
               billingCycle === 'monthly'
                 ? plan.priceMonthly
                 : plan.priceAnnually;
+            const isSelected = selectedPlanId === plan.id;
 
             return (
               <div key={plan.id} className="plan-card">
-                <div className={`plan-card-header plan-header-${plan.headerTheme}`}>
+                <div className={`plan-card-header plan-header-${plan.headerTheme} ${isSelected ? 'plan-header-active' : ''}`}>
                   <div className="plan-card-header-top">
                     <h3 className="plan-title">{plan.name}</h3>
                     {plan.recommended && (
@@ -111,7 +111,9 @@ export default function Plan() {
                     )}
                   </div>
 
-                  <button className={`plan-btn plan-btn-${plan.buttonVariant}`}
+                  <button 
+                    className={`plan-btn plan-btn-${plan.buttonVariant} ${isSelected ? 'plan-btn-active' : ''}`}
+                    onClick={() => setSelectedPlanId(plan.id)}
                   >
                     {plan.buttonText}
                   </button>

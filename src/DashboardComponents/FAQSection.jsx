@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { IoChevronDownOutline, IoChevronForwardOutline } from 'react-icons/io5';
 import phoneOuter from '../assets/Dashboard/FAQ/PhoneInner.png'
 import phoneInner from '../assets/Dashboard/FAQ/phoneOuter.png'
@@ -30,7 +31,7 @@ const faqData = [
 ];
 
 export default function FAQSection() {
-  const [openId, setOpenId] = useState(1); // Set item 1 open by default
+  const [openId, setOpenId] = useState(1); 
 
   const toggleFAQ = (id) => {
     setOpenId(openId === id ? null : id);
@@ -89,9 +90,9 @@ export default function FAQSection() {
           })}
         </div>
 
-        <a href="#view-more" className="faq-view-more">
+        <Link to='/faq' className="faq-view-more">
           View more    &gt;
-        </a>
+        </Link>
       </div>
     </section>
   );

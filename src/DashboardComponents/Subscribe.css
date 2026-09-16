@@ -135,6 +135,16 @@
     top: 50%;
   }
 
+  .sub-input-error {
+    border-color:  #ef4444 !important;
+  }
+
+.sub-error-text {
+    margin-left: 40px;
+    color: #ef4444;
+    font-size: 13px;
+}
+
 @media (max-width: 992px) {
   .subscribe-page {
     padding: 40px 20px;

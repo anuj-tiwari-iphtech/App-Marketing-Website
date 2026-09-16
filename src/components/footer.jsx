@@ -2,10 +2,20 @@ import React from 'react';
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { IoChevronDownOutline } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import logo from '../assets/logo.jpg'; 
 import './footer.css';
 
+const language = ['English', 'Spanish', 'French', 'German'];
+
 export default function Footer() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState('English');
+
+  const handleSelect = (lang) =>{
+    setSelected(lang);
+    setIsOpen(false);
+  }
   return (
     <footer className="footer-container">
       <div className="footer-content">
@@ -69,14 +79,34 @@ export default function Footer() {
           <span className="dot-footer">•</span>
           <Link to='/privacy'>Privacy</Link>
           <span className="dot-footer">•</span>
-          <a href="#terms">Terms</a>
+          <Link to="/terms">Terms</Link>
           <span className="dot-footer">•</span>
-          <a href="#sitemap">Sitemap</a>
+          <Link to="/sitemap">Sitemap</Link>
         </div>
 
-        <div className="language-dropdown">
-          <span>English</span>
+        <div
+          className={`language-dropdown-wrapper ${isOpen ? 'active' : ''}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span>{selected}</span>
           <IoChevronDownOutline className="dropdown-icon" />
+
+          {isOpen && (
+            <ul className='language-menu'>
+              {language.map((lang) => (
+                <li
+                  key={lang}
+                  className={`language-option ${lang === selected ? 'selected' : ''}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleSelect(lang);
+                  }}
+                >
+                  {lang}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </footer>

@@ -53,7 +53,7 @@
     border-color: #BCC1CAFF;
     border-style: solid;
     outline: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .input-group textarea{
@@ -68,7 +68,7 @@
     border-color: #BCC1CAFF;
     border-style: solid;
     outline: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .input-group input::placeholder{
@@ -96,6 +96,15 @@
     border-radius: 0 20px 20px 0;
 }
 
+.input-error {
+  border-color: #ef4444 !important;
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 13px;
+  margin: 4px 0 4px 0;
+}
 
 @media (max-width: 1150px) {
     .contact-form-section {

@@ -1,7 +1,7 @@
 .plan-section {
     padding: 60px 20px;
     background-color: #ffffff;
-  }
+}
   
   .plan-container {
     max-width: 1040px;
@@ -62,7 +62,6 @@
     align-items: stretch;
   }
   
-
   .plan-card {
     border: 1px solid #e5e7eb;
     border-radius: 16px;
@@ -82,8 +81,8 @@
   }
   
   .plan-header-blue {
-    background-color: #6A86EAFF;
-    color: #ffffff;
+    background-color: #f3f5fd;
+    color: #2b303a;
   }
   
   .plan-card-header-top {
@@ -164,13 +163,14 @@
   }
   
   .plan-btn-filled {
-    background-color: #6A86EAFF;
+    background-color: #ffffff;
     border: 1px solid #6A86EAFF;
-    color: #ffffff;
+    color: #6A86EAFF;
   }
   
   .plan-btn-filled:hover {
     background-color: #6A86EAFF;
+    color: #ffffff;
   }
   
   .plan-features-container {
@@ -208,6 +208,28 @@
     color: #48D4B6FF;
     flex-shrink: 0;
   }
+
+  .plan-header-active {
+    background-color: #6A86EA !important;
+    color: #ffffff !important;
+}
+
+.plan-header-active .plan-tagline {
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.plan-btn-active.plan-btn-outlined {
+    background-color: #6A86EA;
+    color: #ffffff;
+    border-color: #6A86EA;
+}
+
+.plan-btn-active.plan-btn-filled {
+    background-color: #6A86EA;
+    color: #ffffff;
+    border-color: #6A86EA;
+}
 
   @media (max-width: 900px) {
     .plan-grid {

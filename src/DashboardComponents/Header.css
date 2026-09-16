@@ -97,19 +97,18 @@
     transition: opacity 0.2s;
 }
   
-.btn-primary {
-    background-color: #6A86EAFF;
-    color: white;
-    padding: 12px 28px;
+.btn-primary.btn-active {
+  background-color: #6A86EAFF; 
+  color: #ffffff;
+  padding: 12px 28px;
 }
-  
-  .btn-primary:hover {
-    opacity: 0.9;
-  }
-  
-  .btn-secondary {
-    color: #6b7280;
-  }
+
+.btn-secondary.btn-active {
+  background-color: #6A86EAFF; 
+  color: #ffffff;
+  border-color: #6A86EA;
+  padding: 12px 28px;
+}
   
 .hero-image-content {
     background: #ffffff;

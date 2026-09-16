@@ -1,8 +1,12 @@
 import React from 'react';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 import './Privacy.css';
 
 export default function Privacy() {
   return (
+    <>
+    <Navbar/>
     <section className="privacy-section">
       <div className="privacy-container">
         
@@ -73,5 +77,7 @@ export default function Privacy() {
 
       </div>
     </section>
+    <Footer/>
+    </>
   );
 }

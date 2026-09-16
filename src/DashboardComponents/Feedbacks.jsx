@@ -3,6 +3,8 @@ import right from '../assets/Dashboard/feedback/right.png'
 import ele from '../assets/Dashboard/feedback/cardele.png'
 import { FaStar ,FaQuoteRight} from "react-icons/fa";
 import avatar1 from '../assets/Dashboard/feedback/A1.jpg'
+import avatar2 from '../assets/Dashboard/feedback/D1.jpg'
+import avatar3 from '../assets/Dashboard/feedback/J1.jpg'
 import './feedbacks.css'
 
 const feedbacks = [
@@ -12,7 +14,7 @@ const feedbacks = [
       quote: "Labore et enim aute duis exercitation officia irure laboris est pariatur",
       name: "Tempor labori",
       title: "Tempor esse aute magna",
-      avatar: avatar1
+      avatar: avatar2
     },
     {
       id: 2,
@@ -28,7 +30,7 @@ const feedbacks = [
       quote: "Labore et enim aute duis exercitation officia irure laboris est pariatur",
       name: "Tempor labori",
       title: "Tempor esse aute magna",
-      avatar: avatar1
+      avatar: avatar3
     }
   ];
 

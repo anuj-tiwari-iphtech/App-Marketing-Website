@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom"
 import OC1 from "../assets/Dashboard/OurClients/OC1.png"
 import OC2 from "../assets/Dashboard/OurClients/OC2.png"
 import OC3 from "../assets/Dashboard/OurClients/OC3.png"
@@ -7,6 +8,11 @@ import OC4 from "../assets/Dashboard/OurClients/OC4.png"
 import './ourClients.css'
 
 export default function OurClients() {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/contact-us')
+    }
   return (
     <>
         <div className="contact-us">
@@ -16,7 +22,7 @@ export default function OurClients() {
                 <p>
                 Incididunt ex irure ad non Lorem culpa fugiat exercitation ullamco esse minim tempor quis l 
                 </p>
-                <button>
+                <button onClick={handleClick}>
                     Contact us
                 </button>
             </div>

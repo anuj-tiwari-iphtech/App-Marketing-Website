@@ -8,8 +8,10 @@ import FAQs from './pages/FAQs';
 import ContactUs from './pages/ContactUs';
 import Careers from './pages/Careers';
 import Privacy from './pages/Privacy';
+import TermsPage from './pages/Terms';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css'
+import SitemapPage from './pages/Sitemap';
 
 function App() {
 
@@ -27,6 +29,8 @@ function App() {
         <Route path='contact-us' element={<ContactUs/>}/>
         <Route path='/careers' element={<Careers/>}/>
         <Route path='/privacy' element={<Privacy/>}/>
+        <Route path='/terms' element={<TermsPage/>}/>
+        <Route path='/sitemap' element={<SitemapPage/>}/>
       </Routes>
     </BrowserRouter>
   )

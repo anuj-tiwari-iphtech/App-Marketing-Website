@@ -1,9 +1,16 @@
-import outer from '../assets/Dashboard/sub-outer.png'
-import inner from '../assets/AboutUs/modalimg.jpg'
+import { useNavigate } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { TfiBag } from "react-icons/tfi";
+import outer from '../assets/Dashboard/sub-outer.png'
+import inner from '../assets/AboutUs/modalimg.jpg'
 import '../DashboardComponents/Subscribe.css'
 export default function Subscribe() {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/careers')
+    }
   return (
     <div className='subscribe-page'>
         <div className='subs-banner'>
@@ -17,6 +24,7 @@ export default function Subscribe() {
             <div className='subs-input-ele'>
                 <button className='sub-button'
                     style={{minWidth: '180px'}}
+                    onClick={handleClick}
                 >
                     View Open Position
                 </button>

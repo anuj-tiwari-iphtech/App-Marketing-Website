@@ -1,9 +1,15 @@
-import outer from '../assets/Dashboard/sub-outer.png'
-import inner from '../assets/FAQ.jpg'
+import { useNavigate } from "react-router-dom";
 import { FaRegComment } from "react-icons/fa";
 import { RiQuestionMark } from "react-icons/ri";
+import outer from '../assets/Dashboard/sub-outer.png'
+import inner from '../assets/FAQ.jpg'
 import '../DashboardComponents/Subscribe.css'
 export default function FindYourAnswer() {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/contact-us')
+    }
   return (
     <div className='subscribe-page'>
         <div className='subs-banner'>
@@ -17,6 +23,7 @@ export default function FindYourAnswer() {
             <div className='subs-input-ele'>
                 <button className='sub-button'
                     style={{minWidth: '140px'}}
+                    onClick={handleClick}
                 >
                     Contact us
                 </button>
