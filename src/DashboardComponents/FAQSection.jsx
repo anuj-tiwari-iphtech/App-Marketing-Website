@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoChevronDownOutline, IoChevronForwardOutline } from 'react-icons/io5';
 import './FAQSection.css';
-import Mobile from '../components/mobile';
+import Mobile from '../components/Mobile';
 
 const faqData = [
   {

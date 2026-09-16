@@ -1,5 +1,5 @@
 import Navbar from "../components/navbar";
-import Feedbacks from "../DashboardComponents/feedbacks";
+import Feedbacks from "../DashboardComponents/Feedbacks";
 import Subscribe from "../DashboardComponents/Subscribe";
 import Footer from "../components/footer";
 import Plan from "../components/Plan";
