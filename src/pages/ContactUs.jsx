@@ -5,11 +5,13 @@ import Navbar from "../components/navbar"
 
 export default function ContactUs() {
   return (
-    <>
+    <div className="page-wrapper">
       <Navbar/>
-      <ContactHero/>
-      <ContactForm/>
+      <div className="page-content">
+        <ContactHero/>
+        <ContactForm/>
+      </div>
       <Footer/>
-    </>
+    </div>
   )
 }

@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import heroimg from '../assets/Feature/header.png'
 import './Hero.css'
 
 export default function Hero() {
+  const [activeBtn, setActiveBtn] = useState('primary');
   return (
     <section className="hero-section">
 
@@ -18,10 +20,10 @@ export default function Hero() {
             reprehenderit pariatur.
           </p>
           <div className="hero-btn-group">
-            <button className="btn btn-primary" onClick={() => {}}>
-              Request demo
+            <button className={`btn btn-primary ${activeBtn === 'primary' ? 'btn-active' : ''}`} onClick={() => setActiveBtn('primary')}>
+              Request Demo
             </button>
-            <button className="btn btn-secondary" onClick={() => {}}>
+            <button className={`btn btn-secondary ${activeBtn === 'secondary' ? 'btn-active' : ""}`} onClick={() => setActiveBtn('secondary')}>
               Learn more
             </button>
           </div>

@@ -6,12 +6,14 @@ import Footer from "../components/footer"
 
 export default function AboutUs() {
   return (
-    <>
+    <div className="page-wrapper">
       <Navbar/>
-      <FaqHero/>
-      <WhoWeAre/>
-      <Subscribe/>
+      <div className="page-content">
+        <FaqHero/>
+        <WhoWeAre/>
+        <Subscribe/>
+      </div>
       <Footer/>
-    </>
+    </div>
   )
 }

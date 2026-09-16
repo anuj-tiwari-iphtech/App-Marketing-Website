@@ -5,6 +5,7 @@ import Hero from "../FeaturesComponents/Hero";
 import FeatureCards from "../FeaturesComponents/FeatureBenefits";
 import HowItWorks from "../FeaturesComponents/HowItWorks";
 import Blog from "../FeaturesComponents/Blog";
+import BenefitsSection from "../FeaturesComponents/Benefits";
 export default function Features() {
   return (
     <div className="page-wrapper">
@@ -12,6 +13,7 @@ export default function Features() {
       <div className="page-content">
         <Hero/>
         <FeatureCards/>
+        <BenefitsSection/>
         <HowItWorks/>
         <Blog/>
         <Subscribe/>

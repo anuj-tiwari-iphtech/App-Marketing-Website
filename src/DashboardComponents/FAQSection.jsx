@@ -6,6 +6,7 @@ import phoneInner from '../assets/Dashboard/FAQ/phoneOuter.png'
 import img from '../assets/Dashboard/FAQ/smily.png'
 import chat from '../assets/Dashboard/FAQ/chat1.png'
 import './FAQSection.css';
+import Mobile from '../components/mobile';
 
 const faqData = [
   {
@@ -41,27 +42,7 @@ export default function FAQSection() {
     <section className="faq-container">
       <div className="faq-media-col">
 
-        <img src={phoneOuter} className='faq-phone-outer' alt='Phone Case'/>
-        <img src={phoneInner} className='faq-phone-inner' alt='Phone Case Inner'/>
-
-        <div className='question'>
-          <h1>?</h1><p>Ask us anything</p>
-        </div>
-
-        <div className='chat-1'>
-        <p>Qui voluptate laboris ut do excepteur elit eu </p>
-        <span>12:03</span>
-        </div>
-
-        <div className='chat-2'>
-          <p>Occaecat exercitation laboris in anim adipisicing adipisicing tempor in eu cupidata</p>
-        </div>
-
-        <div className='chat-3'>
-          <img src={img} alt='chat-3'/>
-        </div>
-        <p className='time'>12:01</p>
-        <img src={chat} className='chat-img' alt='chat-icon'/>
+        <Mobile/>
 
       </div>
 

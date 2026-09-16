@@ -6,12 +6,14 @@ import FaqPageHero from "../FAQs/FaqPageHero"
 
 export default function FAQs() {
   return (
-    <>
+    <div className="page-wrapper">
       <Navbar/>
-      <FaqPageHero/>
-      <FaqSection/>
-      <FindYourAnswer/>
+      <div className="page-content">
+        <FaqPageHero/>
+        <FaqSection/>
+        <FindYourAnswer/>
+      </div>
       <Footer/>
-    </>
+    </div>
   )
 }

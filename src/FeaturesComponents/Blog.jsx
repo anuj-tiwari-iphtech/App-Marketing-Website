@@ -1,8 +1,8 @@
-import React from 'react';
-import './Blog.css';
+import { useNavigate } from 'react-router-dom';
 import img1 from '../assets/Feature/Blog/Blog1.png';
 import img2 from '../assets/Feature/Blog/Blog2.jpg';
 import img3 from '../assets/Feature/Blog/Blog3.png';
+import './Blog.css';
 
 const blogData = [
   {
@@ -34,13 +34,14 @@ const blogData = [
 ];
 
 export default function Blog() {
+  const navigate = useNavigate();
   return (
     <section className="blog-section">
       <div className="blog-container">
         
         <div className="blog-header">
           <h2 className="blog-title">Blog</h2>
-          <button className="blog-view-btn">
+          <button className="blog-view-btn" onClick={() => {navigate('/Blog')}}>
             View more <span>&gt;</span>
           </button>
         </div>

@@ -37,7 +37,7 @@
     line-height: 22px;
     font-weight: 400;
     color: #6A86EAFF;
-    border: 1px solid #6A86EAFF;
+    border: none;
     background: #ffffff;
     width: 140px;
     height: 36px;
@@ -112,11 +112,7 @@
     border-radius: 0 20px 20px 0;
 }
 
-/* ==========================================
-   Responsive Styles for Blog Page
-   ========================================== */
 
-/* Tablet View */
 @media (max-width: 992px) {
     .blog-page-header-container h1 {
       font-size: 38px;

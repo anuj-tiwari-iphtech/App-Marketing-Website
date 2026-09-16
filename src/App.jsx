@@ -12,6 +12,7 @@ import TermsPage from './pages/Terms';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css'
 import SitemapPage from './pages/Sitemap';
+import CaseStudies from './pages/CaseStudies';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/privacy' element={<Privacy/>}/>
         <Route path='/terms' element={<TermsPage/>}/>
         <Route path='/sitemap' element={<SitemapPage/>}/>
+        <Route path='/case-studies' element={<CaseStudies/>}/>
       </Routes>
     </BrowserRouter>
   )
