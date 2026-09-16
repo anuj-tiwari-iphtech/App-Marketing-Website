@@ -1,4 +1,4 @@
-# Project Name
+# App Marketing Website
 
 Frontend UI for an app marketing website — includes Home, Features, Pricing, FAQs, About, Careers, and Contact pages, built with reusable React components and form validation."
 
