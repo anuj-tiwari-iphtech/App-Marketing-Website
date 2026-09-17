@@ -70,6 +70,16 @@ const blogData = [
 export default function BlogsPage() {
 
     const [active , setActive] = useState('All');
+
+    const handleCategoryClick = (cat, event) => {
+      setActive(cat);
+  
+      event.currentTarget.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center',
+      });
+    };
   return (
     <>
         <div className="blog-page">
@@ -84,7 +94,7 @@ export default function BlogsPage() {
                             <button
                                 key={cat}
                                 className={active === cat ? 'active' : ''}
-                                onClick={() => setActive(cat)}
+                                onClick={(e) => handleCategoryClick(cat,e)}
                             >
                                 {cat}
                             </button>

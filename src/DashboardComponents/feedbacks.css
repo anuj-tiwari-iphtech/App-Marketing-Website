@@ -165,16 +165,23 @@
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #e5e7eb;
-    cursor: pointer;
-    margin-bottom: 40px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease, width 0.3s ease, transform 0.3s ease;
 }
 
 .dot.active {
-    background-color: #8da2ef;
+  background-color: #8da2ef;
+  width: 28px;
+  border-radius: 5px;
+}
+
+.dot:hover {
+  background-color: #b8c4f0;
 }
 
 @media (max-width: 900px) {

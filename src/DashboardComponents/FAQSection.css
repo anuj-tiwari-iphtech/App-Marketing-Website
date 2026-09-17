@@ -274,7 +274,7 @@
 
   @media (max-width: 600px) {
     .faq-container {
-      padding: 24px 16px;
+      padding: 24px 1px;
     }
   
     /* .faq-media-col {

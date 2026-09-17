@@ -90,11 +90,13 @@
 
 @media (max-width: 600px) {
     .hero-left-svg{
-        display: none;
+        width: 160px;
+        height: 99px;
     }
 
     .hero-right-svg{
-        display: none;
+        width: 118px;
+        height: 211px;
     }
 
     .carrer-page-our-value{

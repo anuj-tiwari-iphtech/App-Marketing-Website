@@ -39,6 +39,7 @@ export default function Subscribe() {
             </div>
 
             <div className="subs-input-wrapper">
+                {error && <p className="sub-error-text">{error}</p>}
                 <div className='subs-input-ele'>
                     <input
                         type='email'
@@ -54,7 +55,7 @@ export default function Subscribe() {
                         Subscribe
                     </button>
                 </div>
-                {error && <p className="sub-error-text">{error}</p>}
+                
             </div>
             <img src={outer} className='outer-img' alt='Outer Frame'/>
             <img src={inner} className='inner-img' alt='Inner Graphic'/>

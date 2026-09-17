@@ -142,6 +142,18 @@ export default function FaqSection() {
         setOpenId(openId === id ? null : id);
     };
 
+    const handleCategoryClick = (cat, event) => {
+        setActiveCategory(cat);
+        setOpenId(null);
+
+        // Smoothly scroll the selected button into view within the horizontal wrapper
+        event.currentTarget.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center'
+        });
+    };
+
     const filteredFaqs = faqData.filter((item) => item.category === activeCategory);
 
     return (
@@ -154,10 +166,7 @@ export default function FaqSection() {
                     <button
                         key={cat}
                         className={`faq-cat-btn ${activeCategory === cat ? 'faq-cat-active' : ''}`}
-                        onClick={() => {
-                            setActiveCategory(cat);
-                            setOpenId(null); 
-                        }}
+                        onClick={(e) => handleCategoryClick(cat,e)}
                     >
                         {cat}
                     </button>

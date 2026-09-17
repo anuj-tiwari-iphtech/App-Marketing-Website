@@ -43,3 +43,29 @@
     box-shadow: 0px 4px 9px #171a1f1C, 0px 0px 2px #171a1f1F;
     z-index: 3;
 } 
+
+@media (max-width: 1100px){
+
+    .hero-image-content-feature {
+        max-width: 400px;
+    }
+      
+} 
+
+@media (max-width: 500px){
+
+    .hero-arch-bg {
+        right: 13%;
+        width: 307px;
+    }
+      
+    .hero-feature-img img {
+        height: 460px;
+    }
+    
+    .card-white {
+        width: 250px;
+        height: 130px;
+    } 
+   
+} 

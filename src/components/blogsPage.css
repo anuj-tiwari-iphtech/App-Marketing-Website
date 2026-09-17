@@ -20,6 +20,7 @@
     align-items: center;
     gap: 30px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .blog-page-header-container h1{
@@ -28,7 +29,7 @@
 
 .blog-page-button{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 50px;
 }
 
@@ -113,12 +114,12 @@
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 900px) {
+  
     .blog-page-header-container h1 {
       font-size: 38px;
     }
   
-    /* Wrap category filter buttons if they exceed screen width */
     .blog-page-button {
       gap: 16px;
       flex-wrap: wrap;
@@ -126,7 +127,7 @@
     }
   
     .blog-page-img-container {
-      max-height: none; /* Allows feature post box to auto-expand */
+      max-height: none; 
     }
   
     .blog-page-text h1 {
@@ -139,7 +140,6 @@
     }
   }
   
-  /* Mobile View */
   @media (max-width: 600px) {
     .blog-page {
       padding: 24px 16px;

@@ -161,7 +161,6 @@
     }
   }
   
-  /* Mobile Devices */
   @media (max-width: 576px) {
     .contact-form-section {
       padding: 24px 12px;
@@ -179,16 +178,16 @@
   
     .input-group input,
     .input-group textarea {
-      margin-bottom: 16px;
+      margin-bottom: 10px;
     }
   
     .form-submit {
       margin: 0 16px 24px;
-      width: calc(100% - 32px); /* Full width minus margins */
+      width: calc(100% - 32px); 
       padding: 12px;
     }
   
     .contact-img-section {
-      display: none; /* Hide image on mobile to keep form priority */
+      display: none; 
     }
   }

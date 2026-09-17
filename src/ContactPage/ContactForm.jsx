@@ -32,29 +32,30 @@ export default function ContactForm() {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='input-group'>
                         <label>Name</label>
+                        {errors.name && <p className="error-text">{errors.name.message}</p>}
                         <input
                             type='text'
                             placeholder='Enter your name'
                             className={errors.name ? 'input-error' : ''}
                             {...register('name')}
-                        />
-                        {errors.name && <p className="error-text">{errors.name.message}</p>}
+                        /> 
                     </div>
                     
 
                     <div className='input-group'>
                         <label>Email</label>
+                        {errors.email && <p className="error-text">{errors.email.message}</p>}
                         <input
                             type='text'
                             placeholder='your@email.com'
                             className={errors.name ? 'input-error' : ''}
                             {...register('email')}
-                        />
-                        {errors.email && <p className="error-text">{errors.email.message}</p>}
+                        />  
                     </div>
 
                     <div className='input-group'>
                         <label>Question</label>
+                        {errors.question && <p className="error-text">{errors.question.message}</p>}
                         <textarea
                             type='text'
                             rows='4'
@@ -62,7 +63,6 @@ export default function ContactForm() {
                             className={errors.name ? 'input-error' : ''}
                             {...register('question')}
                         />
-                        {errors.question && <p className="error-text">{errors.question.message}</p>}
                     </div>
 
                     <button type='submit' className='form-submit'>Submit</button>
