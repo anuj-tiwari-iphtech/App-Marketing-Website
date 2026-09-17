@@ -116,19 +116,65 @@
 
 @media (max-width: 900px) {
   
-    .blog-page-header-container h1 {
-      font-size: 38px;
-    }
   
-    .blog-page-button {
-      gap: 16px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .blog-page-img-container {
-      max-height: none; 
-    }
+      /* Keep main page container and header fixed at normal screen width */
+      .blog-page-container,
+      .blog-page-header-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        align-items: flex-start !important;
+        box-sizing: border-box;
+        overflow: hidden; /* Prevents whole page from stretching */
+      }
+    
+      /* Isolate button row for horizontal scroll without expanding parents */
+      .blog-page-button {
+        display: flex !important;
+        justify-content: flex-start !important;
+        gap: 12px !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-x;
+    
+        /* Full-bleed scroll for buttons only */
+        width: auto !important;
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        padding: 8px 20px !important;
+        box-sizing: border-box;
+    
+        /* Hide scrollbars */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    
+      .blog-page-button::-webkit-scrollbar {
+        display: none;
+      }
+    
+      /* Fixed button size so text never squishes */
+      .blog-page-button button {
+        flex: 0 0 auto !important; /* Prevents button compression */
+        width: max-content !important;
+        min-width: 100px;
+        padding: 0 18px !important;
+        height: 36px !important;
+        font-size: 13px !important;
+        white-space: nowrap !important;
+      }
+    
+      /* Ensure feature blog card stays strictly contained */
+      .blog-page-img-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+      }
+    
+      .blog-page-header-container h1 {
+        align-self: center;
+        font-size: 38px;
+      }
   
     .blog-page-text h1 {
       font-size: 24px;
